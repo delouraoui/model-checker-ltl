@@ -1,0 +1,10 @@
+./check.native -m Tests/test_until/modele.fmc -ltl Tests/test_until/test1.ltl
+./check.native -m Tests/test_until/modele.fmc -ltl Tests/test_until/test2.ltl
+./check.native -m Tests/test_until/modele.fmc -ltl Tests/test_until/test3.ltl
+./check.native -m Tests/test_until/modele.fmc -ltl Tests/test_until/test4.ltl
+./check.native -m Tests/test_until/modele.fmc -ltl Tests/test_until/test5.ltl
+./check.native -m Tests/test_until/modele.fmc -ltl Tests/test_until/test6.ltl
+./check.native -m Tests/test_until/modele.fmc -ltl Tests/test_until/test7.ltl
+./check.native -m Tests/test_until/modele.fmc -ltl Tests/test_until/test8.ltl
+./check.native -m Tests/test_until/modele.fmc -ltl Tests/test_until/test9.ltl
+./check.native -m Tests/test_until/modele.fmc -ltl Tests/test_until/test10.ltl

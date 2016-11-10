@@ -1,0 +1,7 @@
+Kripke One {
+	node-list ::= 
+		<w1, "npi" >;
+	initial-node ::= w1;	
+	transition-list ::=
+	<w1,"",w1>
+};

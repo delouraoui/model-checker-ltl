@@ -1,0 +1,9 @@
+true : package(unix)
+
+<src>			: include
+<src/kripke_struct>     : include
+<src/ltl_struct>  	: include
+	
+
+
+

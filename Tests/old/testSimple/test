@@ -1,0 +1,149 @@
+Kripke G {
+	node-list ::= 
+		<w1, "npi" >,
+		<w2, "not(pi)" >,
+		<w3, "pi">,
+		<w4, "pi">,
+		<w5 ,"not(pi)">;
+	initial-node ::= w1;	
+	transition-list ::=
+	<w1,"",w2>,
+	<w2,"",w3>,
+	<w2,"",w4>,
+	<w3,"",w3>,
+	<w3,"",w5>,
+	<w4,"",w5>
+};
+
+Kripke F {
+	node-list ::= 
+		<w0, "npi" >,<w1, "not(pi)" >,
+		<w2, "pi">,<w3, "pi">,<w4 ,"not(pi)">;
+	initial-node ::= w1;	
+	transition-list ::=
+	<w0,"",w1>,
+	<w0,"",w3>,
+	<w1,"",w2>,
+	<w2,"",w0>,
+	<w3,"",w4>,
+	<w4,"",w0>
+};
+Kripke F1 {
+	node-list ::= 
+		<w0, "npi" >,<w1, "not(pi)" >,
+		<w2, "pi">;
+	initial-node ::= w1;	
+	transition-list ::=
+	<w0,"",w1>,
+	<w0,"",w2>,
+	<w1,"",w1>,
+	<w2,"",w0>
+};
+Kripke F2 {
+	node-list ::= 
+		<w0, "npi" >,<w1, "not(pi)" >;
+	initial-node ::= w1;	
+	transition-list ::=
+	<w0,"",w0>,
+	<w0,"",w1>,
+	<w1,"",w1>
+};
+Kripke F3 {
+	node-list ::= 
+		<w0, "npi" >,<w1, "not(pi)" >,
+		<w2, "pi">,<w3, "pi">,<w4 ,"not(pi)">;
+	initial-node ::= w1;	
+	transition-list ::=
+	<w0,"",w1>,
+	<w0,"",w2>,
+	<w1,"",w0>,
+	<w2,"",w3>,
+	<w3,"",w2>,
+	<w4,"",w0>
+};
+Kripke F4 {
+	node-list ::= 
+		<w0, "npi" >,<w1, "not(pi)" >,
+		<w2, "pi">,<w3, "pi">,<w4 ,"not(pi)">;
+	initial-node ::= w1;	
+	transition-list ::=
+	<w0,"",w1>,
+	<w0,"",w2>,
+	<w1,"",w0>,
+	<w2,"",w3>,
+	<w3,"",w0>,
+	<w4,"",w0>
+};
+Kripke F5 {
+	node-list ::= 
+		<w0, "npi" >,<w1, "not(pi)" >,
+		<w2, "pi">,<w3, "pi">,<w4 ,"not(pi)">;
+	initial-node ::= w1;	
+	transition-list ::=
+	<w0,"",w1>,
+	<w0,"",w3>,
+	<w1,"",w2>,
+	<w2,"",w0>,
+	<w3,"",w4>,
+	<w4,"",w3>
+};
+
+Kripke F6 {
+	node-list ::= 
+		<w0, "npi" >,<w1, "not(pi)" >,
+		<w2, "pi">;
+	initial-node ::= w1;	
+	transition-list ::=
+	<w0,"",w1>,
+	<w0,"",w2>,
+	<w1,"",w1>,
+	<w1,"",w2>,
+	<w2,"",w2>
+};
+Kripke F7 {
+	node-list ::= 
+		<w0, "npi" >,<w1, "not(pi)" >,
+		<w2, "pi">;
+	initial-node ::= w1;	
+	transition-list ::=
+	<w0,"",w1>,
+	<w0,"",w2>,
+	<w1,"",w1>,
+	<w1,"",w2>,
+	<w2,"",w2>,
+	<w2,"",w0>
+};
+
+Kripke F8 {
+	node-list ::= 
+		<w0, "npi" >,<w1, "not(pi)" >,
+		<w2, "pi">,<w3, "pi">,<w4 ,"not(pi)">;
+	initial-node ::= w1;	
+	transition-list ::=
+	<w0,"",w0>,
+	<w0,"",w1>,
+	<w1,"",w2>,
+	<w2,"",w2>,
+	<w2,"",w3>,
+	<w3,"",w4>,
+	<w4,"",w3>	
+};
+
+Kripke F9 {
+	node-list ::= 
+		<w0, "npi" >,<w1, "not(pi)" >,
+		<w2, "pi">,<w3, "pi">,<w4 ,"not(pi)">;
+	initial-node ::= w1;	
+	transition-list ::=
+	<w0,"",w0>,
+	<w0,"",w1>,
+	<w1,"",w2>,
+	<w2,"",w2>,
+	<w2,"",w3>,
+	<w3,"",w4>,
+	<w3,"",w1>,
+	<w4,"",w3>	
+}
+
+
+

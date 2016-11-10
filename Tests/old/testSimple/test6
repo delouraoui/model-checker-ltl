@@ -1,0 +1,193 @@
+Kripke K1{
+       node-list ::= 
+		<q1, "npi" >,
+		<q2, "not(pi)">,
+		<q3, "pi">,
+		<q4, "pi">;
+       initial-node ::= q1;
+       transition-list ::=
+	<q1,"",q1>,
+	<q1,"",q2>,
+	<q2,"",q3>,
+	<q2,"",q4>,
+	<q2,"",q4>,
+	<q4,"",q2>;
+};
+Kripke K2{
+       node-list ::= 
+		<q1, "npi" >,
+		<q2, "not(pi)">,
+		<q3, "pi">,
+		<q4, "pi">;
+       initial-node ::= q1;
+       transition-list ::=
+	<q1,"",q2>,
+	<q2,"",q3>,
+	<q2,"",q3>,
+	<q3,"",q4>,
+	<q4,"",q2>;
+};
+Kripke K3{
+       node-list ::= 
+		<q1, "npi" >,
+		<q2, "not(pi)">,
+		<q3, "pi">,
+		<q4, "pi">,
+		<q5, "pi">,
+		<q6, "pi">;
+       initial-node ::= q1;
+       transition-list ::=
+	<q1,"",q2>,
+	<q1,"",q2>,
+	<q2,"",q3>,
+	<q2,"",q3>,
+	<q2,"",q5>,
+	<q3,"",q4>,
+	<q3,"",q4>,
+	<q4,"",q5>,
+	<q5,"",q6>,
+	<q6,"",q4>;
+};
+
+Kripke K4{
+       node-list ::= 
+		<q1, "npi" >,
+		<q2, "not(pi)">,
+		<q3, "pi">,
+		<q4, "pi">,
+		<q5, "pi">,
+		<q6, "pi">,
+		<q7, "pi">,
+		<q8, "pi">,
+		<q9, "pi">;
+       initial-node ::= q1;
+       transition-list ::=
+	<q1,"",q2>,
+	<q1,"",q2>,
+	<q1,"",q6>,
+	<q1,"",q6>,
+	<q1,"",q9>,
+	<q2,"",q3>,
+	<q3,"",q4>,
+	<q4,"",q5>,
+	<q5,"",q2>,
+	<q6,"",q7>,
+	<q7,"",q8>,
+	<q8,"",q6>,
+	<q9,"",q9>;
+};
+
+Kripke K5{
+       node-list ::= 
+		<q1, "npi" >,
+		<q2, "not(pi)">,
+		<q3, "pi">,
+		<q4, "pi">,
+		<q5, "pi">,
+		<q6, "pi">;
+       initial-node ::= q1;
+       transition-list ::=
+	<q1,"",q2>,
+	<q1,"",q2>,
+	<q1,"",q2>,
+	<q2,"",q3>,
+	<q2,"",q3>,
+	<q2,"",q3>,
+	<q3,"",q5>,
+	<q3,"",q6>,
+	<q3,"",q4>,
+	<q4,"",q4>,
+	<q5,"",q5>,
+	<q6,"",q4>;
+};
+
+Kripke K6{
+       node-list ::= 
+		<q1, "npi" >,
+		<q2, "not(pi)">,
+		<q3, "pi">,
+		<q4, "pi">;
+       initial-node ::= q1;
+       transition-list ::=
+	<q1,"",q2>,
+	<q1,"",q3>,
+	<q1,"",q3>,
+	<q2,"",q4>,
+	<q3,"",q2>,
+	<q4,"",q2>;
+};
+
+
+Kripke K7{
+       node-list ::= 
+		<q1, "npi" >,
+		<q2, "not(pi)">,
+		<q3, "pi">,
+		<q4, "pi">;
+       initial-node ::= q1;
+       transition-list ::=
+	<q1,"",q2>,
+	<q1,"",q3>,
+	<q1,"",q4>,
+	<q2,"",q1>,
+	<q3,"",q4>,
+	<q4,"",q3>;
+};
+
+
+Kripke K8{
+       node-list ::= 
+		<q1, "npi" >,
+		<q2, "not(pi)">,
+		<q3, "pi">,
+		<q4, "pi">,
+		<q5, "pi">,
+		<q6, "pi">,
+		<q7, "pi">,
+		<q8, "pi">,
+		<q9, "pi">,
+		<q10, "pi">;
+       initial-node ::= q1;
+       transition-list ::=
+	<q1,"",q2>,
+	<q2,"",q3>,
+	<q3,"",q4>,
+	<q3,"",q10>,
+	<q4,"",q5>,
+	<q5,"",q2>,
+	<q10,"",q6>,
+	<q6,"",q7>,
+	<q6,"",q7>,
+	<q7,"",q8>,
+	<q8,"",q10>,
+	<q8,"",q9>,
+	<q9,"",q9>;
+};
+
+Kripke K9{
+       node-list ::= 
+		<q1, "npi" >,
+		<q2, "not(pi)">,
+		<q3, "pi">,
+		<q4, "pi">,
+		<q5, "pi">,
+		<q6, "pi">,
+		<q7, "pi">,
+		<q8, "pi">,
+		<q9, "pi">,
+		<q10, "pi">;
+       initial-node ::= q1;
+       transition-list ::=
+	<q1,"",q2>,
+	<q2,"",q3>,
+	<q3,"",q4>,
+	<q3,"",q10>,
+	<q4,"",q5>,
+	<q5,"",q2>,
+	<q10,"",q6>,
+	<q6,"",q7>,
+	<q7,"",q8>,
+	<q8,"",q10>,
+	<q8,"",q9>,
+	<q9,"",q9>;
+};

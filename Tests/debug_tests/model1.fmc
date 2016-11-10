@@ -1,0 +1,15 @@
+Kripke K{
+       node-list ::= 
+              <q0, "f">,
+		<q1, "p">,
+		<q2, "q">,
+		<q3, "t">;
+       initial-node ::= q1;
+       transition-list ::=
+              <q0,"",q1>,
+       	<q1,"",q2>,
+              <q2,"",q1>,
+              <q1,"",q3>,
+       	<q3,"",q3>;
+};
+

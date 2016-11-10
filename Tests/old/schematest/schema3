@@ -1,0 +1,11 @@
+Kripke K5{
+       node-list ::= 
+                <q1, "npi" >,
+                <q2, "not(pi)">,
+                <q3, "pi">;
+       initial-node ::= q1;
+       transition-list ::=
+        <q1,"",q1>,
+        <q1,"",q2>,
+        <q2,"",q2>;
+};

@@ -1,0 +1,12 @@
+Kripke K{
+       node-list ::= 
+		<s1, "a","b">,
+		<s2, "a","b">,
+		<s3, "a">;
+       initial-node ::= q1;
+       transition-list ::=
+	<s1,"",s2>,
+	<s2,"",s1>,
+	<s2,"",s3>,
+	<s3,"",s3>;
+};

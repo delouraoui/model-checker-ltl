@@ -1,0 +1,15 @@
+Kripke G {
+	node-list ::= 
+		<w1, "npi" >,
+		<w2, "not(pi)" >,
+		<w3, "pi">,
+		<w4, "pi">;
+	initial-node ::= w1;	
+	transition-list ::=
+	<w1,"",w1>,
+	<w1,"",w2>,
+	<w2,"",w3>,
+	<w2,"",w4>,
+	<w3,"",w2>,
+	<w4,"",w4>
+};

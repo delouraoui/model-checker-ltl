@@ -1,0 +1,74 @@
+; schema
+(set-info :status 0)
+(set-logic QF_UFLIA)
+(declare-fun z1it () Int)
+(declare-fun z1t () Int)
+(declare-fun z0t () Int)
+(declare-fun z2it () Int)
+(declare-fun z2t () Int)
+(declare-fun z2p () Int)
+(declare-fun z1p () Int)
+(declare-fun z0p () Int)
+(declare-fun z0it () Int)
+(assert
+ 
+(and 
+	ps1
+	(and 
+		(=> 
+			(< (+ z0t 1) 2) 
+			(and (= z2t z2p) (= z2p z2it) (= z2it 0))
+		) 
+		(=> 
+			(< (+ z0t 1) 1) 
+			(and (= z1t z1p) (= z1p z1it) (= z1it 0))
+		)  
+
+		(and (= z0t z0p) (= z0it z0p) (> z0p 0) (< z0p 3))
+	)
+	psi2
+	(and (<= z2t 1) (<= z1t 1)) //phi2
+	psi3
+	(and 
+		(=> 
+			(and (<= 2 (+ z0t 1)) (= z2t 0)) 
+			(and (<= z2p 1) (>= z2p 1))
+		) 
+		(=> 
+			(and (<= 1 (+ z0t 1)) (= z1t 0)) 
+			(and (<= z1p 1) (>= z1p 1))
+		)
+	) 
+	psi4
+	(and 
+		(=> (and (<= 2 (+ z0t 1)) (= z2t 1)) (and (<= z2p 1) (>= z2p 1))) 
+		(=> (and (<= 1 (+ z0t 1)) (= z1t 1)) (and (<= z1p 1) (>= z1p 1)))
+	) 
+	psi5
+	(and 
+		(=> (= 2 (+ z0t 1)) (= z2t 1)) (=> (= 1 (+ z0t 1)) (= z1t 1))
+	) 
+	psi6
+	(and 
+		(=> (<= 2 (+ z0t 1)) (and (=> (<= 1 (+ z0t 1)) (or (not (= z2p z1p)) (not (= z2t z1t)))))) 
+		(=> (<= 1 (+ z0t 1)) (and (=> (<= 2 (+ z0t 1)) (or (not (= z1p z2p)) (not (= z1t z2t))))))
+	) 
+	psi7
+	(and 
+		(=> 
+			(<= 1 z0t) 
+			(or 
+				(and (= 1 z1t) (= 0 z1p) (= 0 z2t) (= 0 z2p)) 
+				(and (= 0 z1t) (= 0 z1p) (= 1 z2t) (= 0 z2p)) 
+				(and (= 0 z1t) (= 0 z1p) (= 0 z2t) (= 0 z2p))
+			)
+		)
+	) 
+	psi8
+	(and 
+		(=> (<= 2 (+ z0t 1)) (and (> z2it 0) (=> (= z2t 0) (= z2it 1)))) 
+		(=> (<= 1 (+ z0t 1)) (and (> z1it 0) (=> (= z1t 0) (= z1it 1))))
+	)
+)
+)
+(check-sat)
